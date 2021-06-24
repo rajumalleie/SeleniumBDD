@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DuckGo Tests Suite" verbose="10" parallel="tests" thread-count="1"
+       configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="utilities.TestListener"/>
+    </listeners>
+
+        <test name="TC1 DuckTest" >
+            <classes>
+                <class name="DuckGoTests.DuckTest1"/>
+            </classes>
+        </test>
+
+        <test name="TC2 DuckTest" >
+            <classes>
+                <class name="DuckGoTests.DuckTest1"/>
+            </classes>
+        </test>
+    <!--        <test name="Cucumber TC1 DuckTest" >-->
+    <!--            <classes>-->
+    <!--                <class name="testrunners.TestRunner"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+
+</suite>
